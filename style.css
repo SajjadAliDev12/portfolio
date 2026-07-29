@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Custom CSS for Portfolio
+   ========================================================================== */
+
+/* Custom Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b0f17;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f2937;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+}
+
+/* ==========================================================================
+   Profile Picture Pop-out Effect
+   ========================================================================== */
+
+/* 
+   - يجعل الصورة تبرز من أعلى الدائرة مع الحفاظ على قطع الجزء السفلي 
+   - يفضل أن تكون الصورة الشخصية بصيغة PNG وبخلفية شفافة
+*/
+.profile-popout {
+    /* تجنب منع النقرات أو التفاعل مع العناصر الخلفية */
+    pointer-events: none;
+    /* تحسين جودة العرض */
+    transform: translateZ(0);
+    transition: transform 0.4s ease;
+}
+
+
+/* تأثير تحريك خفيف عند التمرير فوق منطقة الصورة */
+div:hover > .profile-popout {
+    transform: scale(1.03);
+}
+
+/* Card Hover Shadow Glow */
+article {
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.15);
+}
