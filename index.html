@@ -20,28 +20,25 @@
     <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
 
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    <!-- Tailwind CSS CDN Configured Correctly -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind = {
-            config: {
-                darkMode: 'class',
-                theme: {
-                    extend: {
-                        colors: {
-                            darkBg: '#0b0f17',
-                            cardBg: '#111827',
-                            accent: '#3b82f6',
-                            accentHover: '#2563eb',
-                            borderClr: '#1f2937',
-                            tagText: '#60a5fa'
-                        },
-                        fontFamily: {
-                            sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif']
-                        }
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#0b0f17',
+                        cardBg: '#111827',
+                        accent: '#3b82f6',
+                        accentHover: '#2563eb',
+                        borderClr: '#1f2937',
+                        tagText: '#60a5fa'
+                    },
+                    fontFamily: {
+                        sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif']
                     }
                 }
             }
@@ -405,6 +402,6 @@
     </footer>
 
     <!-- Custom Script File -->
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
